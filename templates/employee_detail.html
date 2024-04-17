@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Detail</title>
+</head>
+<body>
+  <div class="container pt-5">
+    <div class="card" style="width: 18rem;">
+        <img src="{{ employee.photo.url }}" class="card-img-top" alt="Employee photo">
+        <div class="card-body">
+          <h5 class="card-title">{{ employee.firstname }} {{ employee.lastname }}</h5>
+          <p class="card-text">{{ employee.designation }}</p>
+          <p class="card-text">{{ employee.phone_number }}</p>
+          <p class="card-text">{{ employee.email_address }}</p>
+        </div>
+        <div>
+          <a href="{% url 'home' %}" class="btn btn-primary">Back to home</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
